@@ -1,14 +1,94 @@
 body {
-  padding: 100px;
+  background-image: url(images/body.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 55px;
+}
+h1 {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px !important;
+  font-weight: 900 !important;
+  color: #2f7767c2;
+}
+h2 {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px !important;
+  font-weight: 700 !important;
+  color: #2f7767c2;
+  margin-bottom: 30px !important;
+}
+h3 {
+  display: block;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px !important;
+  font-weight: 700 !important;
+  color: #ffffff;
+}
+h4 {
+  display: block;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: #ffffff;
+}
+h5 {
+  display: block;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #ffffff;
+}
+.form-label {
+  display: block;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #ffffff;
+}
+#emailHelp {
+  display: block;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: #ffffff;
 }
 .login-form {
+  background-image: url(images/form-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid rgb(174, 220, 221);
   box-shadow: 5px 5px 10px rgb(174, 220, 221);
   border-radius: 10px;
   margin-top: 50px;
   padding: 50px;
 }
-
 #transaction-area {
   display: none;
+}
+.deposit {
+  background-color: rgba(39, 145, 245, 0.678);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.withdraw {
+  background-color: rgba(39, 245, 183, 0.678);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.balance {
+  background-color: rgba(183, 245, 39, 0.678);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
 }
