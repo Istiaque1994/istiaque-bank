@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div class="transaction-area">
+    <div id="transaction-area">
         <h1 class="text-center">Transaction Area</h1>
         <h3 class="text-center">Hello Istiaque Ahmed</h3>
     </div>
@@ -41,6 +41,8 @@
         loginBtn.addEventListener("click", function(){
             const loginArea = document.getElementById("login-area");
             loginArea.style.display = "none";
+            const transactionArea = document.getElementById("transaction-area");
+            transactionArea.style.display = "block";
         })
     </script>
 </body>
