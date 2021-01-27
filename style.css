@@ -92,3 +92,25 @@ h5 {
   padding: 30px;
   margin-bottom: 30px;
 }
+.input-deposit {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid rgb(174, 220, 221);
+  box-shadow: 5px 5px 10px rgb(174, 220, 221);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.input-deposit h5 {
+  color: #469fb3c7;
+}
+.input-withdraw {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid rgb(174, 220, 221);
+  box-shadow: 5px 5px 10px rgb(174, 220, 221);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.input-withdraw h5 {
+  color: #469fb3c7;
+}
