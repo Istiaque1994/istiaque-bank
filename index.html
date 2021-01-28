@@ -47,7 +47,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="withdraw status">
                             <h5>Withdeaw</h5>
-                            <h3>00 Taka</h3>
+                            <h3><span id="currentWithdraw">00</span> Taka</h3>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -71,9 +71,9 @@
                         <div class="input-withdraw status">
                             <h5>Withdeaw</h5>
                             <br>
-                            <input type="text" placeholder="Enter Your Withdeaw Amount" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input id="withdeawAmount" type="text" placeholder="Enter Your withdraw Amount" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             <br>
-                            <button id="addWithdeaw" class="btn btn-success">Withdeaw</button>
+                            <button id="addWithdraw" class="btn btn-success">withdraw</button>
                         </div>
                     </div>
                 </div>
@@ -97,17 +97,32 @@
         depositBtn.addEventListener("click", function(){
             const depositAmount = document.getElementById("depositAmount").value;
             const depositNumber = parseFloat(depositAmount);
-            console.log("depositAmount");
+            
 
-            // const currentDeposit = document.getElementById("currentDeposit").innerText;
-            // const currentDepositNumber = parseFloat(currentDeposit);
+            const currentDeposit = document.getElementById("currentDeposit").innerText;
+            const currentDepositNumber = parseFloat(currentDeposit);
+            const totalDeposit = currentDepositNumber + depositNumber;
+            
+            document.getElementById("currentDeposit").innerText = totalDeposit;
 
-            // const totalDeposit = depositNumber + depositAmount;
-
-            // console.log("totalDeposit");
+            
         })
 
-        // Withdeaw button event handler
+        // Withdraw button event handler
+        const withdrawBtn = document.getElementById("addWithdraw");
+        withdrawBtn.addEventListener("click", function(){
+            const withdeawAmount = document.getElementById("withdeawAmount").value;
+            const withdrawNumber = parseFloat(withdeawAmount);
+            
+
+            const currentWithdraw = document.getElementById("currentWithdraw").innerText;
+            const currentWithdrawNumber = parseFloat(currentWithdraw);
+            const totalWithdraw = currentWithdrawNumber + withdrawNumber;
+            
+            document.getElementById("currentWithdraw").innerText = totalWithdraw;
+
+            
+        })
         
 
     </script>
